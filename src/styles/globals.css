@@ -1,0 +1,316 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: muli;
+  src: url("/font/Muli-Light.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: muli;
+  src: url("/font/Muli-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: muli;
+  src: url("/font/Muli.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: muli;
+  src: url("/font/Muli-SemiBold.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: muli;
+  src: url("/font/Muli-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: muli-bold;
+  src: url("/font/Muli-Bold.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* General Sans */
+@font-face {
+  font-family: "GeneralSans-Variable";
+  src: url("/font/GeneralSans-Variable.woff2") format("woff2"),
+    url("/font/GeneralSans-Variable.woff") format("woff"),
+    url("/font/GeneralSans-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 200.0 to 700.0)
+
+*/
+
+@font-face {
+  font-family: "GeneralSans-VariableItalic";
+  src: url("/font/GeneralSans-VariableItalic.woff2") format("woff2"),
+    url("/font/GeneralSans-VariableItalic.woff") format("woff"),
+    url("/font/GeneralSans-VariableItalic.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GeneralSans-Extralight";
+  src: url("/font/GeneralSans-Extralight.woff2") format("woff2"),
+    url("/font/GeneralSans-Extralight.woff") format("woff"),
+    url("/font/GeneralSans-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans-ExtralightItalic";
+  src: url("/font/GeneralSans-ExtralightItalic.woff2") format("woff2"),
+    url("/font/GeneralSans-ExtralightItalic.woff") format("woff"),
+    url("/font/GeneralSans-ExtralightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GeneralSans-Light";
+  src: url("/font/GeneralSans-Light.woff2") format("woff2"),
+    url("/font/GeneralSans-Light.woff") format("woff"),
+    url("/font/GeneralSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans-LightItalic";
+  src: url("/font/GeneralSans-LightItalic.woff2") format("woff2"),
+    url("/font/GeneralSans-LightItalic.woff") format("woff"),
+    url("/font/GeneralSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/font/GeneralSans-Regular.woff2") format("woff2"),
+    url("/font/GeneralSans-Regular.woff") format("woff"),
+    url("/font/GeneralSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans-Italic";
+  src: url("/font/GeneralSans-Italic.woff2") format("woff2"),
+    url("/font/GeneralSans-Italic.woff") format("woff"),
+    url("/font/GeneralSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GeneralSans-Medium";
+  src: url("/font/GeneralSans-Medium.woff2") format("woff2"),
+    url("/font/GeneralSans-Medium.woff") format("woff"),
+    url("/font/GeneralSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans-MediumItalic";
+  src: url("/font/GeneralSans-MediumItalic.woff2") format("woff2"),
+    url("/font/GeneralSans-MediumItalic.woff") format("woff"),
+    url("/font/GeneralSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GeneralSans-Semibold";
+  src: url("/font/GeneralSans-Semibold.woff2") format("woff2"),
+    url("/font/GeneralSans-Semibold.woff") format("woff"),
+    url("/font/GeneralSans-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans-SemiboldItalic";
+  src: url("/font/GeneralSans-SemiboldItalic.woff2") format("woff2"),
+    url("/font/GeneralSans-SemiboldItalic.woff") format("woff"),
+    url("/font/GeneralSans-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GeneralSans-Bold";
+  src: url("/font/GeneralSans-Bold.woff2") format("woff2"),
+    url("/font/GeneralSans-Bold.woff") format("woff"),
+    url("/font/GeneralSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans-BoldItalic";
+  src: url("/font/GeneralSans-BoldItalic.woff2") format("woff2"),
+    url("/font/GeneralSans-BoldItalic.woff") format("woff"),
+    url("/font/GeneralSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+body {
+  font-family: muli, sans-serif !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.ql-editor {
+  min-height: 150px !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#dashboardSideBar {
+  display: block;
+}
+#liveTag {
+  border-width: 2px 23px 12px 19px;
+  border-style: solid;
+  border-color: #0020d1 #0020d1 transparent #0020d1;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 11px !important;
+  /* margin-bottom: 0 !important; */
+  display: inline-block !important;
+  text-align: center;
+  color: #fff !important;
+  margin: 0 auto;
+  background: transparent;
+  width: 40px;
+  text-indent: -8px;
+  font-weight: 400 !important;
+}
+@media only screen and (max-width: 899px) {
+  #dashboardSideBar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #navTab {
+    display: none;
+  }
+}
+/* width */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1efef;
+}
+
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #e9e7e7;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.profile-sidebar-option {
+  cursor: pointer;
+  & > svg > path {
+    fill: white;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+    & > p {
+      color: #000000;
+    }
+  }
+
+  &:hover > svg > path {
+    fill: #000000;
+  }
+}
+
+.profile-side-option-active {
+  background-color: #ffffff;
+  & > p {
+    color: #000000;
+  }
+
+  & > svg > path {
+    fill: #000000;
+  }
+}
+
+.change-message-path-color {
+  & > path:first-child,
+  & > path:nth-child(2) {
+    fill: var(--tooltip-pathcolor);
+  }
+}

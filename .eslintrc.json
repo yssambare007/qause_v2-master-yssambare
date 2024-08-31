@@ -1,0 +1,14 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "semi": "off",
+    "@typescript-eslint/semi": "error",
+    "@next/next/no-document-import-in-page": "off",
+    "@typescript-eslint/consistent-type-imports": "warn"
+  }
+}

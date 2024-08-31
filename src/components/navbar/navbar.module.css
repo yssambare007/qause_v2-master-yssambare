@@ -1,0 +1,19 @@
+#searchBar{
+    width: 400px;
+}
+@media only screen and (max-width: 1200px) {
+    #showMenu{
+        display: block;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #remove{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #signIn{
+        display: none;
+    }
+}
